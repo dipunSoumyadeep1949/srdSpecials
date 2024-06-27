@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Permanent+Marker&family=Tiny5&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 200, 87);
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+h1{
+    margin: 20px 0;
+}
+.container{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    /* justify-content: center;
+    align-items: center; */
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    box-shadow: 6px 5px 10px black;
+    border: none;
+    font-size: 10vmin;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    background-color: #E9724C;
+    color: #481D24;
+}
+
+.box:hover{
+    background-color: #e88f71;
+    transition: 0.2s;
+}
+#reset-btn, #new-btn{
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    background-color: #481D24;
+    color: #E9724C;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#msg{
+    font-size: 5vmin;
+}
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+        height: 40vh;
+    }
+}
